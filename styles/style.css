@@ -1,0 +1,102 @@
+body {
+    background-image: url(/images/ex-bg1.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colors */
+/* cyan: #00FFFF */
+/* pink: #FF007F */
+
+.grid-conatiner {
+    display: grid;
+    grid-template-rows: auto minmax(60%, 1fr);
+    width: 100vw;
+    height: 100vh;
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ba1c2b;
+    border-radius: 0 30px 0 30px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    /* box-shadow: 0 0 10px #00FFFF; */
+}
+
+.navbar > img {
+    height: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff4040;
+}
+
+.hero {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ba1c2b;
+    /* box-shadow: 0 0px 40px 0 rgba(59, 193, 255, 0.67); */
+    display: grid;
+    margin: 20px 20px;
+    height: 80vh;
+    border-radius: 30px 0 30px 0;
+    grid-template-columns: minmax(20%, 1fr) minmax(60%, 2fr);
+    gap: 10px;
+}
+
+.hero img {
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    padding: 0;
+    font-family: "Exo 2", serif;
+    color: white;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.webdev {
+    color: #f01228;
+}
