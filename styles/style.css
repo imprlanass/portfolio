@@ -14,7 +14,7 @@ body {
 /* cyan: #00FFFF */
 /* pink: #FF007F */
 
-.grid-conatiner {
+.grid-container {
     display: grid;
     grid-template-rows: auto minmax(60%, 1fr);
     width: 100vw;
@@ -117,10 +117,15 @@ body {
 /* TODO: make it mobile responsive */
 @media (max-width: 1200px) {
 
-    .grid-conatiner {
+    body {
+        background-attachment: scroll;
+        background-position-x: 5%;
+    }
+
+    .grid-container {
         display: flex;
         flex-direction: column;
-        width: 90vw;
+        width: 100vw;
         height: 100vh;
         /* padding: 20px 20px 20px 20px; */
     }
@@ -131,14 +136,14 @@ body {
         align-items: center;
         border-radius: 0 30px 0 30px;
         padding-right: 20px;
-        margin: 20px 20px 0 20px;
+        margin: 10px 20px 0 20px;
         /* box-shadow: 0 0 10px #00FFFF; */
     }
 
     .hero {
         display: flex;
         margin: 20px 20px;
-        height: 70vh;
+        height: 90vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -169,7 +174,7 @@ body {
         align-items: center;
         margin: 0;
         border-radius: 30px 0 30px 0;
-        width: 80vw;
+        width: 90vw;
         padding-bottom: 20px;
         height: 70vh;
     }
@@ -179,9 +184,9 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin: 0;
+        margin-bottom: 10px;
         border-radius: 0 30px 0 30px;
-        width: 80vw;
+        width: 90vw;
         padding-bottom: 20px;
     }
 }
