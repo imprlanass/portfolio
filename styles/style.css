@@ -3,7 +3,7 @@ body {
     background-size: cover;
     /* background-position: center; */
     background-attachment: fixed;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -35,7 +35,7 @@ body {
     /* box-shadow: 0 0 10px #00FFFF; */
 }
 
-.navbar > img {
+.navbar>img {
     height: 60px;
 }
 
@@ -57,22 +57,18 @@ body {
 }
 
 .hero {
-    background-color: transparent;
-    backdrop-filter: blur(20px);
-    border: 1px solid #ba1c2b;
     /* box-shadow: 0 0px 40px 0 rgba(59, 193, 255, 0.67); */
     display: grid;
     margin: 20px 20px;
     height: 80vh;
-    border-radius: 30px 0 30px 0;
     grid-template-columns: minmax(20%, 1fr) minmax(60%, 2fr);
     gap: 10px;
 }
 
 .hero img {
-    height: 350px;
+    height: 300px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .left-card {
@@ -80,7 +76,24 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ba1c2b;
+    border-radius: 30px 0 30px 0;
+}
+
+.right-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ba1c2b;
+    border-radius: 0 0 30px 30px;
 }
 
 .hero h2 {
@@ -99,4 +112,66 @@ body {
 
 .webdev {
     color: #f01228;
+}
+
+/* TODO: make it mobile responsive */
+@media (max-width: 1270px) {
+
+    .grid-conatiner {
+        display: flex;
+        flex-direction: column;
+        width: clamp(50vw, 70vw, 100vw);
+        height: 100vh;
+        /* padding: 20px 20px 20px 20px; */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border: 1px solid #ba1c2b;
+        border-radius: 0 30px 0 30px;
+        padding-right: 20px;
+        margin: 20px 20px;
+        /* box-shadow: 0 0 10px #00FFFF; */
+    }
+
+    .hero {
+        display: flex;
+        margin: 20px 20px;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border: 1px solid #ba1c2b;
+        border-radius: 30px 0 30px 0;
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+
+    .right-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border: 1px solid #ba1c2b;
+        border-radius: 30px 0 30px 0;
+        width: 80vw;
+        padding-bottom: 20px;
+    }
 }
